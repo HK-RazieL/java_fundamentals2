@@ -42,7 +42,6 @@ public class Main {
     }
 
     private static boolean isVowel (char letter) {
-        char[] vowels = new char[]{'a', 'e', 'o', 'i', 'u', 'A', 'E', 'O', 'U', 'I'};
-        return Arrays.asList(vowels).contains(letter);
+        return "aeiouAIEOU".contains(String.valueOf(letter));
     }
 }
