@@ -11,7 +11,7 @@ public class Main {
         Box box = new Box();
 
         for (int i = 0; i < number; i++) {
-            box.add(reader.readLine());
+            box.add(Integer.parseInt(reader.readLine()));
 
         }
 
