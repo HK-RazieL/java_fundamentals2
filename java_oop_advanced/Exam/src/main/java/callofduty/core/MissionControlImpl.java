@@ -1,7 +1,9 @@
-package main.java.callofduty.core;
+package callofduty.core;
 
-import main.java.callofduty.interfaces.Mission;
-import main.java.callofduty.interfaces.MissionControl;
+
+
+import callofduty.interfaces.Mission;
+import callofduty.interfaces.MissionControl;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Iterator;

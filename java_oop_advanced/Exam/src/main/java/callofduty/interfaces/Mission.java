@@ -1,4 +1,4 @@
-package main.java.callofduty.interfaces;
+package callofduty.interfaces;
 
 public interface Mission extends Identifiable, Rateable, Bountyable {
 }

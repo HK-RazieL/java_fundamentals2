@@ -1,43 +1,33 @@
-package main.java.callofduty.domain.missions;
+package callofduty.domain.missions;
 
-import main.java.callofduty.interfaces.Mission;
-
-import java.util.List;
 
 public class HuntMission extends Missions {
-    public HuntMission(String id, double rating, double bounty) {
-        super(id, rating, bounty);
-        this.rating += rating * 0.5;
-        this.bounty += bounty;
+    HuntMission(String id, Double rating, Double bounty) {
+        super(id, rating * 1.5, bounty * 2);
+    }
+
+
+      public HuntMission(String id, double rating, double bounty) {
+
+          super(id, rating, bounty);
+          this.rating += rating * 0.5;
+          this.bounty += bounty;
+
+      }
+
+
+    @Override
+    public Double getRating() {
+        return super.getRating();
     }
 
     @Override
-    public Mission generateMission(String missionId, Double missionRating, Double missionBounty) {
-        return null;
+    public Double getBounty() {
+        return super.getBounty();
     }
 
     @Override
-    public String agent(List<String> arguments) {
-        return null;
-    }
-
-    @Override
-    public String request(List<String> arguments) {
-        return null;
-    }
-
-    @Override
-    public String complete(List<String> arguments) {
-        return null;
-    }
-
-    @Override
-    public String status(List<String> arguments) {
-        return null;
-    }
-
-    @Override
-    public String over(List<String> arguments) {
-        return null;
+    public String getId() {
+        return super.getId();
     }
 }

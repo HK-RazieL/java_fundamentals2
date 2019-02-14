@@ -1,16 +1,19 @@
-package main.java.callofduty.domain.missions;
+package callofduty.domain.missions;
 
-import main.java.callofduty.interfaces.Mission;
-import main.java.callofduty.interfaces.MissionControl;
-import main.java.callofduty.interfaces.MissionManager;
 
-public abstract class Missions implements Mission, MissionControl, MissionManager {
+import callofduty.interfaces.Mission;
 
-    String id;
-    double rating;
-    double bounty;
+import java.util.List;
 
-    public Missions(String id, double rating, double bounty) {
+public abstract class Missions implements Mission {
+
+   String id;
+   Double rating;
+   Double bounty;
+
+
+    Missions (String id,Double rating,Double bounty){
+        super();
         this.id = id;
         this.rating = rating;
         this.bounty = bounty;
@@ -30,4 +33,10 @@ public abstract class Missions implements Mission, MissionControl, MissionManage
     public String getId() {
         return this.id;
     }
+
+    @Override
+    public String agent(List<String> arguments) {
+        return null;
+    }
+
 }

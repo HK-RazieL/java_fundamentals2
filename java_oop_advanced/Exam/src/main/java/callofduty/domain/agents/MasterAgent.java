@@ -1,8 +1,9 @@
-package main.java.callofduty.domain.agents;
+package callofduty.domain.agents;
 
-import main.java.callofduty.interfaces.BountyAgent;
 
-public class MasterAgent extends BaseAgent implements BountyAgent{
+import callofduty.interfaces.BountyAgent;
+
+public class MasterAgent extends BaseAgent implements BountyAgent {
 
     final double DEFAULT_BOUNTY;
 

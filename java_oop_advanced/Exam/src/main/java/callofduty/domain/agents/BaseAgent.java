@@ -1,15 +1,21 @@
-package main.java.callofduty.domain.agents;
+package callofduty.domain.agents;
 
-import main.java.callofduty.interfaces.Agent;
-import main.java.callofduty.interfaces.Mission;
+
+import callofduty.interfaces.Agent;
+import callofduty.interfaces.Mission;
 
 public abstract class BaseAgent implements Agent {
-
     String id;
     String name;
     double rating;
 
-    public BaseAgent(String id, String name, double rating) {
+    BaseAgent(){
+
+    }
+
+    BaseAgent(String id, String name, double rating) {
+
+        super();
         this.id = id;
         this.name = name;
         this.rating = rating;
